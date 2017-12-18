@@ -9,8 +9,8 @@ class Article extends React.Component {
         <h2>{this.props.value.title}</h2>
         <p>{this.props.value.body}</p>
         <div className="text-right">
-          <Button className="button" value="Edit" />
-          <Button className="button" value="Delete" />
+          <Button className="button" value="Edit"/>
+          <Button className="button" value="Delete" onClick={this.props.onDelete} />
         </div>
       </article>
     );

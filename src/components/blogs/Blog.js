@@ -6,7 +6,7 @@ class Blog extends React.Component {
   render() {
     return (
       <section className="Blog">
-        {this.props.value.map((article, index) => <Article value={article} key={index}/>)}
+        {this.props.value.map((article, index) => <Article value={article} key={index} onDelete={() => this.props.onDelete(index)}/>)}
       </section>
     );
   }

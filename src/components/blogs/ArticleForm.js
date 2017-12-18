@@ -1,7 +1,7 @@
+import React from 'react';
 import Button from '../elements/Button';
-import React, { Component } from 'react';
 
-class ArticleForm extends Component {
+class ArticleForm extends React.Component {
   constructor() {
     super();
 
