@@ -4,9 +4,17 @@ import Article from './Article';
 
 class Blog extends React.Component {
   render() {
+    const articles = this.props.value.map((article, index) => {
+      return (
+        <Article value={article}
+                 key={index}
+                 onEdit={() => this.props.onEdit(index)}
+                 onDelete={() => this.props.onDelete(index)}/>
+      );
+    });
     return (
       <section className="Blog">
-        {this.props.value.map((article, index) => <Article value={article} key={index} onDelete={() => this.props.onDelete(index)}/>)}
+        {articles}
       </section>
     );
   }

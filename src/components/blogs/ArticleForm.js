@@ -34,6 +34,7 @@ class ArticleForm extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
+    this.props.onSubmit(this.state.article);
     this.setState({
       isActive: false,
       article: {
@@ -41,8 +42,6 @@ class ArticleForm extends React.Component {
         body: ''
       }
     });
-
-    return this.props.onSubmit(this.state.article);
   }
 
   render() {
@@ -51,8 +50,7 @@ class ArticleForm extends React.Component {
     return (
       <div className="AppForm">
         <div className="text-center">
-          <Button className="button"
-                  value="+"
+          <Button className="button fa fa-plus"
                   onClick={(event) => this.handleClick(event, 'open')}/>
         </div>
         <div className={isActive}>
