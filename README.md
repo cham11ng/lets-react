@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/cham11ng/lets-react.svg?branch=master)](https://travis-ci.org/cham11ng/lets-react)
 
-Application for building APIs with [reactjs.js](http://reactjs.com/)
+Simple blog like application in [reactjs.js](http://reactjs.com/)
 
 ---
 
